@@ -40,8 +40,8 @@
 
     <script>
 const HS_VALUES = [
-    6.00, 5.50, 5.00, 4.50, 4.00, 3.75, 3.50, 3.25, 3.00, 2.75,
-    2.50, 2.25, 2.00, 1.75, 1.50, 1.25, 1.00, 0.75, 0.50, 0.25
+    8.00, 7.50, 7.00, 6.50, 6.00, 5.50, 5.00, 4.50, 4.00, 3.75, 3.50, 3.25,
+    3.00, 2.75, 2.50, 2.25, 2.00, 1.75, 1.50, 1.25, 1.00, 0.75, 0.50, 0.25
 ];
 
 const vm = new Vue({
@@ -61,7 +61,7 @@ const vm = new Vue({
             var upper = -1;
             var lower = 0;
 
-            for (var bpm = 50; bpm <= 600; bpm += 2) {
+            for (var bpm = 50; bpm <= 600; bpm++) {
                 if (upper + 1 < HS_VALUES.length && bpm >= this.suitable_bpms[upper + 1]) {
                     upper++;
                 }
